@@ -1,0 +1,15 @@
+SciMark 2.0a
+
+Composite Score: 1292.789225140083
+FFT (1048576): 267.30325480410073
+SOR (1000x1000):   1229.7870174367745
+Monte Carlo : 765.3184791087625
+Sparse matmult (N=100000, nz=1000000): 1049.4491745084777
+LU (1000x1000): 3152.0881998422988
+
+java.vendor: Ubuntu
+java.version: 11.0.20
+os.arch: aarch64
+os.name: Linux
+os.version: 5.19.0-1026-aws
+W

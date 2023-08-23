@@ -1,0 +1,77 @@
+user@google-bluejay:~/junkyard-benches$ sysbench memory --threads=4 --memory-total-size=4G --memory-oper=read run
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 4096MiB
+  operation: read
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 4194304 (10968293.83 per second)
+
+4096.00 MiB transferred (10711.22 MiB/sec)
+
+
+Throughput:
+    events/s (eps):                      10968293.8264
+    time elapsed:                        0.3824s
+    total number of events:              4194304
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    0.09
+         95th percentile:                        0.00
+         sum:                                  376.13
+
+Threads fairness:
+    events (avg/stddev):           1048576.0000/0.00
+    execution time (avg/stddev):   0.0940/0.01
+
+user@google-bluejay:~/junkyard-benches$ sysbench memory --threads=4 --memory-total-size=4G --memory-oper=write run
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 4096MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 4194304 (8002310.28 per second)
+
+4096.00 MiB transferred (7814.76 MiB/sec)
+
+
+Throughput:
+    events/s (eps):                      8002310.2831
+    time elapsed:                        0.5241s
+    total number of events:              4194304
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    0.21
+         95th percentile:                        0.00
+         sum:                                  866.12
+
+Threads fairness:
+    events (avg/stddev):           1048576.0000/0.00
+    execution time (avg/stddev):   0.2165/0.04

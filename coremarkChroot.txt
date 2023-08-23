@@ -1,0 +1,39 @@
+user@localhost:~/junkyard-benches/coremark-junkyard$ cat run1.log 
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 14502
+Total time (secs): 14.502000
+Iterations/Sec   : 27582.402427
+Iterations       : 400000
+Compiler version : GCC11.2.0
+Compiler flags   : -O2 -DPERFORMANCE_RUN=1  -lrt
+Memory location  : Please put data memory location here
+			(e.g. code in flash, data on heap etc)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x65c5
+Correct operation validated. See README.md for run and reporting rules.
+CoreMark 1.0 : 27582.402427 / GCC11.2.0 -O2 -DPERFORMANCE_RUN=1  -lrt / Heap
+
+
+
+
+user@localhost:~/junkyard-benches/coremark-junkyard$ cat run2.log 
+2K validation run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 14592
+Total time (secs): 14.592000
+Iterations/Sec   : 27412.280702
+Iterations       : 400000
+Compiler version : GCC11.2.0
+Compiler flags   : -O2 -DPERFORMANCE_RUN=1  -lrt
+Memory location  : Please put data memory location here
+			(e.g. code in flash, data on heap etc)
+seedcrc          : 0x18f2
+[0]crclist       : 0xe3c1
+[0]crcmatrix     : 0x0747
+[0]crcstate      : 0x8d84
+[0]crcfinal      : 0x8091
+Correct operation validated. See README.md for run and reporting rules.
