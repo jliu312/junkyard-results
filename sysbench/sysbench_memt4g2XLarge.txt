@@ -1,8 +1,8 @@
-ubuntu@ip-172-31-19-228:~$ sysbench memory --threads=1 run
+user@ip-172-31-44-14:~/junkyard-benches/sysbench-junkyard$ sysbench memory --threads=1 run
 sysbench memory --threads=2 run
 sysbench memory --threads=4 run
 sysbench memory --threads=8 run
-sysbench 1.1.0-55bf65c (using bundled LuaJIT 2.1.0-beta3)
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
 
 Running the test with following options:
 Number of threads: 1
@@ -19,28 +19,28 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 45702518 (4570202.31 per second)
+Total operations: 45927807 (4592741.17 per second)
 
-44631.37 MiB transferred (4463.09 MiB/sec)
+44851.37 MiB transferred (4485.10 MiB/sec)
 
 
 Throughput:
-    events/s (eps):                      4570202.3138
+    events/s (eps):                      4592741.1740
     time elapsed:                        10.0001s
-    total number of events:              45702518
+    total number of events:              45927807
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
-         max:                                    0.02
+         max:                                    0.13
          95th percentile:                        0.00
-         sum:                                 3939.20
+         sum:                                 3956.80
 
 Threads fairness:
-    events (avg/stddev):           45702518.0000/0.00
-    execution time (avg/stddev):   3.9392/0.00
+    events (avg/stddev):           45927807.0000/0.00
+    execution time (avg/stddev):   3.9568/0.00
 
-sysbench 1.1.0-55bf65c (using bundled LuaJIT 2.1.0-beta3)
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
 
 Running the test with following options:
 Number of threads: 2
@@ -57,28 +57,28 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 28620292 (2862001.90 per second)
+Total operations: 33045213 (3304478.16 per second)
 
-27949.50 MiB transferred (2794.92 MiB/sec)
+32270.72 MiB transferred (3227.03 MiB/sec)
 
 
 Throughput:
-    events/s (eps):                      2862001.9019
+    events/s (eps):                      3304478.1614
     time elapsed:                        10.0001s
-    total number of events:              28620292
+    total number of events:              33045213
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
-         max:                                    0.12
+         max:                                    0.13
          95th percentile:                        0.00
-         sum:                                11372.25
+         sum:                                10945.57
 
 Threads fairness:
-    events (avg/stddev):           14310146.0000/6513.00
-    execution time (avg/stddev):   5.6861/0.00
+    events (avg/stddev):           16522606.5000/8570.50
+    execution time (avg/stddev):   5.4728/0.00
 
-sysbench 1.1.0-55bf65c (using bundled LuaJIT 2.1.0-beta3)
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
 
 Running the test with following options:
 Number of threads: 4
@@ -95,28 +95,28 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 51309404 (5130898.39 per second)
+Total operations: 56079877 (5607931.46 per second)
 
-50106.84 MiB transferred (5010.64 MiB/sec)
+54765.50 MiB transferred (5476.50 MiB/sec)
 
 
 Throughput:
-    events/s (eps):                      5130898.3872
+    events/s (eps):                      5607931.4569
     time elapsed:                        10.0001s
-    total number of events:              51309404
+    total number of events:              56079877
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
-         max:                                    0.55
+         max:                                    0.53
          95th percentile:                        0.00
-         sum:                                22508.73
+         sum:                                21299.38
 
 Threads fairness:
-    events (avg/stddev):           12827351.0000/43545.60
-    execution time (avg/stddev):   5.6272/0.06
+    events (avg/stddev):           14019969.2500/50156.76
+    execution time (avg/stddev):   5.3248/0.04
 
-sysbench 1.1.0-55bf65c (using bundled LuaJIT 2.1.0-beta3)
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
 
 Running the test with following options:
 Number of threads: 8
@@ -133,32 +133,33 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 49597840 (4959698.35 per second)
+Total operations: 88858495 (8885675.77 per second)
 
-48435.39 MiB transferred (4843.46 MiB/sec)
+86775.87 MiB transferred (8677.42 MiB/sec)
 
 
 Throughput:
-    events/s (eps):                      4959698.3500
+    events/s (eps):                      8885675.7682
     time elapsed:                        10.0002s
-    total number of events:              49597840
+    total number of events:              88858495
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
-         max:                                   28.00
+         max:                                    0.57
          95th percentile:                        0.00
-         sum:                                44124.82
+         sum:                                50592.96
 
 Threads fairness:
-    events (avg/stddev):           6199730.0000/21228.25
-    execution time (avg/stddev):   5.5156/0.18
+    events (avg/stddev):           11107311.8750/12275.45
+    execution time (avg/stddev):   6.3241/0.03
 
-ubuntu@ip-172-31-19-228:~$ sysbench memory --threads=1 --memory-oper=read run
+
+user@ip-172-31-44-14:~/junkyard-benches/sysbench-junkyard$ sysbench memory --threads=1 --memory-oper=read run
 sysbench memory --threads=2 --memory-oper=read run
 sysbench memory --threads=4 --memory-oper=read run
 sysbench memory --threads=8 --memory-oper=read run
-sysbench 1.1.0-55bf65c (using bundled LuaJIT 2.1.0-beta3)
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
 
 Running the test with following options:
 Number of threads: 1
@@ -175,28 +176,28 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 47561512 (4756087.08 per second)
+Total operations: 41014442 (4101389.67 per second)
 
-46446.79 MiB transferred (4644.62 MiB/sec)
+40053.17 MiB transferred (4005.26 MiB/sec)
 
 
 Throughput:
-    events/s (eps):                      4756087.0837
+    events/s (eps):                      4101389.6700
     time elapsed:                        10.0001s
-    total number of events:              47561512
+    total number of events:              41014442
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
-         max:                                    0.05
+         max:                                    0.13
          95th percentile:                        0.00
-         sum:                                 3818.53
+         sum:                                 3811.00
 
 Threads fairness:
-    events (avg/stddev):           47561512.0000/0.00
-    execution time (avg/stddev):   3.8185/0.00
+    events (avg/stddev):           41014442.0000/0.00
+    execution time (avg/stddev):   3.8110/0.00
 
-sysbench 1.1.0-55bf65c (using bundled LuaJIT 2.1.0-beta3)
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
 
 Running the test with following options:
 Number of threads: 2
@@ -213,28 +214,28 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 58708918 (5870828.10 per second)
+Total operations: 57307107 (5730649.92 per second)
 
-57332.93 MiB transferred (5733.23 MiB/sec)
+55963.97 MiB transferred (5596.34 MiB/sec)
 
 
 Throughput:
-    events/s (eps):                      5870828.0962
+    events/s (eps):                      5730649.9202
     time elapsed:                        10.0001s
-    total number of events:              58708918
+    total number of events:              57307107
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
-         max:                                    0.21
+         max:                                    0.03
          95th percentile:                        0.00
-         sum:                                 4748.36
+         sum:                                 4605.89
 
 Threads fairness:
-    events (avg/stddev):           29354459.0000/205638.00
-    execution time (avg/stddev):   2.3742/0.01
+    events (avg/stddev):           28653553.5000/80408.50
+    execution time (avg/stddev):   2.3029/0.01
 
-sysbench 1.1.0-55bf65c (using bundled LuaJIT 2.1.0-beta3)
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
 
 Running the test with following options:
 Number of threads: 4
@@ -251,28 +252,28 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 85660105 (8565950.88 per second)
+Total operations: 94317231 (9431606.05 per second)
 
-83652.45 MiB transferred (8365.19 MiB/sec)
+92106.67 MiB transferred (9210.55 MiB/sec)
 
 
 Throughput:
-    events/s (eps):                      8565950.8836
+    events/s (eps):                      9431606.0500
     time elapsed:                        10.0001s
-    total number of events:              85660105
+    total number of events:              94317231
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
-         max:                                    0.64
+         max:                                    0.20
          95th percentile:                        0.00
-         sum:                                 6897.50
+         sum:                                 7585.93
 
 Threads fairness:
-    events (avg/stddev):           21415026.2500/22351.38
-    execution time (avg/stddev):   1.7244/0.00
+    events (avg/stddev):           23579307.7500/37958.21
+    execution time (avg/stddev):   1.8965/0.00
 
-sysbench 1.1.0-55bf65c (using bundled LuaJIT 2.1.0-beta3)
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
 
 Running the test with following options:
 Number of threads: 8
@@ -289,23 +290,23 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 84792472 (8479111.46 per second)
+Total operations: 104857600 (10637436.86 per second)
 
-82805.15 MiB transferred (8280.38 MiB/sec)
+102400.00 MiB transferred (10388.12 MiB/sec)
 
 
 Throughput:
-    events/s (eps):                      8479111.4630
-    time elapsed:                        10.0002s
-    total number of events:              84792472
+    events/s (eps):                      10637436.8559
+    time elapsed:                        9.8574s
+    total number of events:              104857600
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
-         max:                                   20.00
+         max:                                    0.24
          95th percentile:                        0.00
-         sum:                                13645.27
+         sum:                                 8433.89
 
 Threads fairness:
-    events (avg/stddev):           10599059.0000/18191.07
-    execution time (avg/stddev):   1.7057/0.10
+    events (avg/stddev):           13107200.0000/0.00
+    execution time (avg/stddev):   1.0542/0.00

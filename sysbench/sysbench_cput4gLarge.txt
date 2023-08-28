@@ -10,20 +10,109 @@ Initializing worker threads...
 Threads started!
 
 CPU speed:
-    events per second:  2838.39
+    events per second:  2843.95
 
 Throughput:
-    events/s (eps):                      2838.3868
-    time elapsed:                        10.0004s
-    total number of events:              28385
+    events/s (eps):                      2843.9474
+    time elapsed:                        10.0002s
+    total number of events:              28440
 
 Latency (ms):
          min:                                    0.35
          avg:                                    0.35
-         max:                                    0.43
+         max:                                    0.40
          95th percentile:                        0.35
-         sum:                                 9995.66
+         sum:                                 9995.41
 
 Threads fairness:
-    events (avg/stddev):           28385.0000/0.00
-    execution time (avg/stddev):   9.9957/0.00
+    events (avg/stddev):           28440.0000/0.00
+    execution time (avg/stddev):   9.9954/0.00
+
+Running the test with following options:
+Number of threads: 2
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  5653.88
+
+Throughput:
+    events/s (eps):                      5653.8789
+    time elapsed:                        10.0002s
+    total number of events:              56540
+
+Latency (ms):
+         min:                                    0.35
+         avg:                                    0.35
+         max:                                    1.10
+         95th percentile:                        0.36
+         sum:                                19988.55
+
+Threads fairness:
+    events (avg/stddev):           28270.0000/107.00
+
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  5674.17
+
+Throughput:
+    events/s (eps):                      5674.1704
+    time elapsed:                        10.0004s
+    total number of events:              56744
+
+Latency (ms):
+         min:                                    0.35
+         avg:                                    0.70
+         max:                                   16.87
+         95th percentile:                        0.35
+         sum:                                39973.68
+
+Threads fairness:
+    events (avg/stddev):           14186.0000/16.66
+    execution time (avg/stddev):   9.9934/0.00
+
+Number of threads: 8
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  5661.93
+
+Throughput:
+    events/s (eps):                      5661.9296
+    time elapsed:                        10.0014s
+    total number of events:              56627
+
+Latency (ms):
+         min:                                    0.35
+         avg:                                    1.41
+         max:                                   32.34
+         95th percentile:                       12.30
+         sum:                                79908.34
+
+Threads fairness:
+    events (avg/stddev):           7078.3750/36.50
+    execution time (avg/stddev):   9.9885/0.01

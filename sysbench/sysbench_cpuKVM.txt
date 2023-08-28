@@ -28,6 +28,67 @@ Threads fairness:
     events (avg/stddev):           31963.0000/0.00
     execution time (avg/stddev):   9.9531/0.00
 
+Number of threads: 2
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  6412.48
+
+Throughput:
+    events/s (eps):                      6412.4830
+    time elapsed:                        10.0008s
+    total number of events:              64130
+
+Latency (ms):
+         min:                                    0.31
+         avg:                                    0.31
+         max:                                   14.14
+         95th percentile:                        0.32
+         sum:                                19980.66
+
+Threads fairness:
+    events (avg/stddev):           32065.0000/16.00
+    execution time (avg/stddev):   9.9903/0.00       
+
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second: 11451.42
+
+Throughput:
+    events/s (eps):                      11451.4248
+    time elapsed:                        10.0004s
+    total number of events:              114519
+
+Latency (ms):
+         min:                                    0.31
+         avg:                                    0.35
+         max:                                    9.78
+         95th percentile:                        0.42
+         sum:                                39932.36
+
+Threads fairness:
+    events (avg/stddev):           28629.7500/3502.77
+    execution time (avg/stddev):   9.9831/0.00
+
+
 Running the test with following options:
 Number of threads: 8
 Initializing random number generator from current time
@@ -40,20 +101,20 @@ Initializing worker threads...
 Threads started!
 
 CPU speed:
-    events per second: 22713.90
+    events per second: 14908.06
 
 Throughput:
-    events/s (eps):                      22713.9017
-    time elapsed:                        10.0004s
-    total number of events:              227148
+    events/s (eps):                      14908.0568
+    time elapsed:                        10.0009s
+    total number of events:              149094
 
 Latency (ms):
-         min:                                    0.35
-         avg:                                    0.35
-         max:                                    0.92
-         95th percentile:                        0.35
-         sum:                                79943.02
+         min:                                    0.31
+         avg:                                    0.54
+         max:                                   16.85
+         95th percentile:                        1.14
+         sum:                                79862.14
 
 Threads fairness:
-    events (avg/stddev):           28393.5000/31.52
-    execution time (avg/stddev):   9.9929/0.00
+    events (avg/stddev):           18636.7500/10181.01
+    execution time (avg/stddev):   9.9828/0.00

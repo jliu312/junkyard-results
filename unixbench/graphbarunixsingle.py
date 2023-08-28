@@ -68,7 +68,7 @@ for idx, machine in enumerate(machines):
     normalized_scores = normalized_data[machine]
     plt.bar(x_indices + idx * (bar_width) + p, normalized_scores, bar_width, color=colors[idx], label=machine)
 
-plt.axhline(y=1, color='black', linestyle='--', label='t4glarge', linewidth=2)  # Horizontal line at y=1
+plt.axhline(y=1, color='black', linestyle='--', label='t4gLarge', linewidth=2)  # Horizontal line at y=1
 plt.xticks(x_indices + (len(machines) / 2) * bar_width + p, benchmarks, rotation=45, ha='right')
 plt.ylabel('Normalized Scores')
 plt.xlabel('Benchmarks')
