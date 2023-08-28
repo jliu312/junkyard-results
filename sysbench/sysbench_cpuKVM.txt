@@ -27,3 +27,33 @@ Latency (ms):
 Threads fairness:
     events (avg/stddev):           31963.0000/0.00
     execution time (avg/stddev):   9.9531/0.00
+
+Running the test with following options:
+Number of threads: 8
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second: 22713.90
+
+Throughput:
+    events/s (eps):                      22713.9017
+    time elapsed:                        10.0004s
+    total number of events:              227148
+
+Latency (ms):
+         min:                                    0.35
+         avg:                                    0.35
+         max:                                    0.92
+         95th percentile:                        0.35
+         sum:                                79943.02
+
+Threads fairness:
+    events (avg/stddev):           28393.5000/31.52
+    execution time (avg/stddev):   9.9929/0.00

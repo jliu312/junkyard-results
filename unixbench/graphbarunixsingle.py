@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Machines
-machines = ['t4gXLarge', 't4gLarge', 'KVM', 'Chroot', 'Native']
+machines = ['t4g2XLarge','t4gXLarge', 't4gLarge', 'KVM', 'Chroot', 'Native']
 
 # Benchmarks
 benchmarks = [
@@ -23,6 +23,10 @@ benchmarks = [
 
 # Data for each machine's benchmark scores
 data = {
+    't4g2XLarge':[
+        3234.8, 1307.4, 475.7, 1925.3, 1468.1, 3092.3, 
+        1060.5, 105.0, 321.1, 1598.5, 7153.3, 609.1, 1131.0
+    ],
     't4gXLarge': [
         3385.1, 1307.7, 483.6, 2002.5, 1505.4, 2925.8,
         1069.0, 108.7, 336.0, 1654.6, 4126.3, 610.1, 1098.0
@@ -59,15 +63,16 @@ plt.figure(figsize=(10, 6))
 bar_width = 0.15  # Width of each bar
 x_indices = np.arange(len(benchmarks))
 
+p = np.linspace(0, 2, len(x_indices))
 for idx, machine in enumerate(machines):
     normalized_scores = normalized_data[machine]
-    plt.bar(x_indices + idx * bar_width, normalized_scores, bar_width, color=colors[idx], label=machine)
+    plt.bar(x_indices + idx * (bar_width) + p, normalized_scores, bar_width, color=colors[idx], label=machine)
 
 plt.axhline(y=1, color='black', linestyle='--', label='t4glarge', linewidth=2)  # Horizontal line at y=1
-plt.xticks(x_indices + (len(machines) / 2) * bar_width, benchmarks, rotation=45, ha='right')
+plt.xticks(x_indices + (len(machines) / 2) * bar_width + p, benchmarks, rotation=45, ha='right')
 plt.ylabel('Normalized Scores')
 plt.xlabel('Benchmarks')
-plt.title('Normalized UnixBench Scores for Different Machines')
+plt.title('Normalized UnixBench Scores for Different Machines, Running 1 copy of tests')
 plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.grid(True, axis='y', linestyle='--', alpha=0.7)  # Add grid lines
 plt.tight_layout()
