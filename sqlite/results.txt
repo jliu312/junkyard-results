@@ -1,0 +1,4 @@
+tweaked kvm: https://openbenchmarking.org/result/2309025-NE-TWEAKEDKV16
+vanilla kvm: https://openbenchmarking.org/result/2309029-NE-VANILLAKV23
+tweaked chroot: https://openbenchmarking.org/result/2309012-NE-SQLITECHR42
+vanilla chroot: https://openbenchmarking.org/result/2309050-NE-SQLITEVAN20

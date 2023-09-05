@@ -1,0 +1,144 @@
+user@ip-172-31-88-240:~$ sysbench mutex --threads=1 run
+sysbench mutex --threads=2 run
+sysbench mutex --threads=4 run
+sysbench mutex --threads=8 run
+sysbench mutex --threads=16 run
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+Throughput:
+    events/s (eps):                      4.1638
+    time elapsed:                        0.2402s
+    total number of events:              1
+
+Latency (ms):
+         min:                                  240.04
+         avg:                                  240.04
+         max:                                  240.04
+         95th percentile:                      240.02
+         sum:                                  240.04
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.2400/0.00
+
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 2
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+Throughput:
+    events/s (eps):                      7.9925
+    time elapsed:                        0.2502s
+    total number of events:              2
+
+Latency (ms):
+         min:                                  249.93
+         avg:                                  250.05
+         max:                                  250.17
+         95th percentile:                      248.83
+         sum:                                  500.11
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.2501/0.00
+
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+Throughput:
+    events/s (eps):                      7.9712
+    time elapsed:                        0.5018s
+    total number of events:              4
+
+Latency (ms):
+         min:                                  410.52
+         avg:                                  464.73
+         max:                                  500.16
+         95th percentile:                      502.20
+         sum:                                 1858.92
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.4647/0.03
+
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 8
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+Throughput:
+    events/s (eps):                      8.0316
+    time elapsed:                        0.9961s
+    total number of events:              8
+
+Latency (ms):
+         min:                                  969.62
+         avg:                                  977.27
+         max:                                  988.15
+         95th percentile:                      995.51
+         sum:                                 7818.18
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.9773/0.01
+
+sysbench 1.1.0-2ca9e3f (using bundled LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 16
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+Throughput:
+    events/s (eps):                      8.0395
+    time elapsed:                        1.9902s
+    total number of events:              16
+
+Latency (ms):
+         min:                                 1815.20
+         avg:                                 1937.34
+         max:                                 1989.82
+         95th percentile:                     1973.38
+         sum:                                30997.40
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   1.9373/0.04
