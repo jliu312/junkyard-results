@@ -69,6 +69,11 @@ machine_names = [filename.split('.')[0] for filename in result_files]
 scores_matrix = np.zeros((len(machine_names), len(sub_benchmarks)))
 
 # Populate the scores_matrix with the extracted scores
+# machine_names.sort()
+machine_names[0] = 'SciMarkt4g2XLarge'
+machine_names[1] = 'SciMarkt4gLarge'
+machine_names[2] = 'SciMarkt4gXLarge'
+print(machine_names)
 for i, machine in enumerate(machine_names):
     for j, benchmark in enumerate(sub_benchmarks):
         scores_matrix[i, j] = task_scores[benchmark].get(machine + '.txt', 0)
